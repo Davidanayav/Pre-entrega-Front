@@ -1,0 +1,197 @@
+body {
+	background: linear-gradient(-45deg, #ee76529c, #e73c7ea5, #23a5d5b0, #23d5ab9c);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media (max-width: 768px) {
+ body {
+        font-size: 14px;
+    }
+}
+
+header {
+    /* background-color: hsl(210, 47%, 52%);*/
+    padding: 10px;
+    text-align: center;
+} 
+
+h1 {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+nav {
+    /* background-color: #343a40; */
+    color: white;
+   /* padding: 1px 0;
+    border: 1px solid black; */
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(181, 145, 145, 0.1);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+nav ul {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(54, 99, 232);
+}
+
+
+main {
+    padding: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mensaje {
+    display:grid;
+    justify-content: stretch;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+#nombre {
+    display:grid;
+    justify-content: stretch;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+#email {
+    display:grid;
+    justify-content: stretch;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: auto;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.productos {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 90%;
+    justify-content: space-between;;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(181, 145, 145, 0.1);
+}
+
+.servicio {
+    background-color: rgba(29, 57, 72, 0.098);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(181, 145, 145, 0.1);
+    transition: background-color 0.5s ease-in-out;
+    text-align: center;
+}
+
+.servicio:hover {
+    background-color: rgba(53, 113, 146, 0.51);
+}
+
+.reseñas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(181, 145, 145, 0.1);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+    background-color: rgba(29, 57, 72, 0.098);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(181, 145, 145, 0.1);
+    transition: background-color 0.5s ease-in-out;
+    text-align: center;
+}
+
+.card:hover {
+    background-color: rgba(53, 113, 146, 0.51);
+}
+
+footer {
+   /* background-color: hsl(308, 69%, 40%); */
+   /* padding: 10px 0; */
+    max-height: 100px;
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(181, 145, 145, 0.1);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
